@@ -1,0 +1,130 @@
+.story {
+  @include center;
+  height: 85vh;
+  width: 90vw;
+
+  &-pictures {
+    @include center;
+    background-attachment: fixed;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 65%;
+    padding-left: 15rem;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba($nav-color, 0.5),
+        rgba($color-primary, 0.5)
+      ),
+      url(/images/sea-poster-large.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+  }
+
+  &-img-1 {
+    width: 90%;
+    box-shadow: 0 2rem 4rem rgba(#000, 0.2);
+    box-shadow: 0.1rem 0.1rem 2rem $color-fifth;
+    @include round;
+  }
+
+  &-img-2 {
+    position: absolute;
+
+    bottom: 6rem;
+    right: -10rem;
+    width: 40%;
+    height: 35%;
+    z-index: 5;
+    box-shadow: 0 2rem 4rem rgba(#000, 0.3);
+    box-shadow: 0.1rem 0.1rem 1rem $color-primary;
+    @include round;
+  }
+
+  &_content {
+    @include center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .heading-2 {
+    width: 75%;
+    font-size: 3.2rem;
+    font-family: $font-primary;
+  }
+
+  .heading-3 {
+    padding: 8rem;
+    align-self: flex-end;
+    font-family: $font-primary;
+  }
+  &__text {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: $color-tericary;
+    width: 60%;
+    margin-bottom: -5rem;
+    align-self: flex-start;
+    font-family: $font-fourth;
+  }
+
+  &-btn {
+    margin: 2rem;
+    margin-left: -12rem;
+  }
+}
+
+@media only screen and (max-width: $large) {
+  .story {
+    &_content {
+      padding-left: 2rem;
+    }
+   
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .story {
+    height: 55vh;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .story {
+    height: 65vh;
+
+    &_content {
+      padding-left: 12rem;
+    }
+    .btn {
+      margin-right: 10rem !important;
+    }
+  }
+}
+@media only screen and (max-width: $small) {
+  .story {
+    flex-direction: column;
+
+    &_content,
+    &-pictures {
+      width: 100%;
+    }
+
+    &-img-1 {
+      width: 60%;
+      margin-right: 15rem;
+    }
+
+    &-img-2 {
+      bottom: 5rem;
+      right: 8rem;
+      width: 30%;
+      height: 35%;
+    }
+  }
+}

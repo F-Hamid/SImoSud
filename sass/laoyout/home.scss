@@ -1,0 +1,177 @@
+.container {
+  @include center;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  width: 20rem;
+  height: 30rem;
+  position: absolute;
+  top: -25rem;
+  left: 18.5rem;
+  animation: intro 4s ease-in-out;
+}
+.home {
+  position: relative;
+  display: flex;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary, 0.7),
+    rgba($color-fourth, 0.7),
+    rgba($color-fourth, 0.9)
+  );
+  height: 100vh;
+  width: 90vw;
+
+  &-icons {
+    @include center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -15rem;
+    margin-left: 54vw;
+    height: 20vw;
+    text-align: center;
+    opacity: 0.8;
+    animation: appear 2s 1s ease-in-out backwards;
+  }
+  &-icon {
+    color: $nav-color;
+    font-weight: 700;
+    margin: 2rem;
+  }
+
+  &-main {
+    @include center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-top: 13rem;
+    padding-left: 5rem;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.main-img {
+  width: 35%;
+  height: 50%;
+  position: absolute;
+  bottom: 5.5rem;
+  right: 5rem;
+  z-index: 5;
+  @include round;
+}
+
+.bckg-video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+.btn {
+  width: 15rem;
+  font-family: $font-primary;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: $color-tericary !important;
+  border: none;
+  border-radius: 0;
+  margin-top: 10rem;
+  margin-left: 15rem;
+  animation: appear 3s ease-in-out;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+// Media Quary
+
+@media only screen and (max-width: $medium) {
+  .logo {
+    left: 17rem;
+    animation: appear 2s ease-in-out;
+  }
+  .home {
+    height: 70vh;
+
+    &-icons {
+      margin-top: -2rem;
+      margin-left: 50vw;
+    }
+  }
+
+  .main-img {
+    width: 40%;
+    height: 40%;
+    bottom: 10rem;
+    right: 5rem;
+    border-radius: 1rem;
+  }
+  .btn {
+    margin-left: 10vw;
+    transform: translateY(-5rem);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .logo {
+    top: -15rem;
+    left: 5rem;
+  }
+  .home {
+    &-icons {
+      margin-top: -2rem;
+      margin-left: 50vw;
+    }
+  }
+
+  .main-img {
+    width: 45%;
+    height: 40%;
+    right: 5rem;
+    border-radius: 1rem;
+  }
+  .btn {
+    margin-left: -0vw;
+    margin-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: $small) {
+  .btn {
+    margin-top: 3rem;
+    margin-left: 0vw;
+  }
+}
+
+@media only screen and (max-width: $smallest) {
+  .home {
+    min-height: 75vh;
+  }
+  .logo {
+    top: -8rem;
+    left: 3rem;
+  }
+  .home {
+    &-icons {
+      margin-top: 7rem;
+    }
+  }
+
+  .main-img {
+    width: 45%;
+    height: 40%;
+    bottom: 5rem;
+    right: 5rem;
+  }
+  .btn {
+    margin-top: 7rem;
+  }
+}

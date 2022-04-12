@@ -1,0 +1,37 @@
+@keyframes intro {
+  0% {
+    left: 0rem;
+    top: -25rem;
+  }
+  25% {
+    top: -24rem;
+  }
+  50% {
+    top: -26rem;
+  }
+
+  100% {
+    left: 18rem;
+    top: -25rem;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.active {
+  transform: translateY(0);
+  opacity: 1;
+}

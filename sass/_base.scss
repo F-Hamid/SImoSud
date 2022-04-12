@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 65%;
+  scroll-behavior: smooth;
+  @media only screen and (max-width: $largest) {
+    font-size: 56%;
+  }
+  @media only screen and (max-width: $large) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $medium) {
+    font-size: 40%;
+  }
+  @media only screen and (max-width: $small) {
+    font-size: 35%;
+  }
+  @media only screen and (max-width: $smallest) {
+    font-size: 30%;
+  }
+  @media only screen and (max-width: 300px) {
+    font-size: 20%;
+    .home {
+      height: 80vh;
+    }
+    .main-img {
+      width: 45%;
+      height: 30%;
+      bottom: 25rem;
+      right: 5rem;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: $color-fifth;
+}

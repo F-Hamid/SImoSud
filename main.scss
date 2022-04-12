@@ -1,0 +1,13 @@
+@import "./sass/variables.scss";
+@import "./sass/base.scss";
+@import "./sass/mixins.scss";
+@import "sass/typography.scss";
+@import "./sass/animation";
+
+// Layouts
+@import "./sass/laoyout/home.scss";
+@import "./sass/laoyout/navbar.scss";
+@import "./sass/laoyout/features.scss";
+@import "./sass/laoyout/story.scss";
+@import "./sass/laoyout/gallery.scss";
+@import "./sass/laoyout/footer.scss";

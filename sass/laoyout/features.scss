@@ -1,0 +1,158 @@
+.features {
+  width: 90vw;
+  background-color: $color-primary;
+
+  &-main {
+    @include center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 60vh;
+    width: 80vw;
+    background-color: $color-primary;
+    margin: 8rem 12rem;
+  }
+
+  &-item {
+    @include center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 20rem;
+
+    width: 50rem;
+    margin: 0 5rem;
+  }
+
+  &-header {
+    @include center;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+
+  }
+  &-heading {
+    font-size: 2.5rem;
+    color: $nav-color;
+  }
+  &-icon {
+    color: $color-fourth;
+    width: 15%;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-right: 2rem;
+  }
+
+  &-text {
+    color: $color-fourth;
+    width: 75%;
+    height: 60%;
+    align-self: flex-start;
+    font-size: 1.5rem;
+
+  }
+}
+
+// Media Query
+@media only screen and (max-width: 1560px) {
+  .features {
+    padding-left: 5rem;
+    &-main {
+      margin: 3rem auto;
+    }
+    &-item {
+      width: 40rem;
+    }
+    &-heading {
+      font-size: 2rem;
+    }
+    &-icon {
+      padding-right: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .features {
+    &-item {
+      width: 35rem;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .features {
+
+    &-main {
+      height: 55vh;
+    }
+
+    &-item {
+      flex-direction: column;
+    }
+    &-heading {
+      font-size: 2rem;
+    }
+    &-text {
+      font-size: 2rem;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .features {
+
+    &-main {
+      margin: 1rem auto;
+    }
+
+    &-item {
+      width: 30rem;
+    }
+    &-heading {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+    &-text {
+      font-size: 1.8rem;
+      margin-top: 0.5rem;
+    }
+    &-icon {
+      margin-right: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $small) {
+  .features {
+    padding-bottom: 6rem;
+
+    &-item {
+      margin: 2rem auto;
+    }
+    &-text {
+      font-size: 2rem;
+      width: 75%;
+    }
+  }
+}
+
+@media only screen and (max-width: $smallest) {
+  .features {
+
+    min-height: 75vh !important;
+
+    &-main {
+      margin: 5rem;
+
+    }
+    &-item {
+      margin: 2rem auto;
+      width: 55rem;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Kanit', sans-serif;
+// font-family: 'Nunito Sans', sans-serif;
+// font-family: 'Special Elite', cursive;
+// font-family: 'Varela Round', sans-serif;
+
+h1 {
+  font-size: 5rem;
+  color: $nav-color;
+  font-family: $font-primary;
+  font-weight: 700;
+  margin-top: -2rem;
+  margin-left: 60vw;
+}
+
+h2 {
+  font-size: 4rem;
+  color: $nav-color;
+  font-family: $font-primary;
+  font-weight: 700;
+  margin-top: -1rem;
+  margin-left: 15rem;
+}
+p {
+  font-family: $font-terciary;
+  color: $color-primary;
+  font-size: 2rem;
+  width: 38%;
+  margin-top: 1rem;
+  margin-left: 15rem;
+}
+@media only screen and (max-width: $medium) {
+  h2 {
+    margin-left: 10vw;
+    width: 35rem;
+  }
+
+  p {
+    margin-top: 5rem;
+    margin-left: 10vw;
+    width: 35rem;
+ 
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  h2 {
+    margin-top: 14rem;
+    margin-left: 0vw;
+    width: 35rem;
+  }
+
+  p {
+    margin-top: 5rem;
+    margin-left: 0vw;
+  
+  }
+}
+
+@media only screen and (max-width: $small) {
+  h2 {
+    margin-top: 2rem;
+    margin-left: 0vw;
+    width: 35rem;
+  }
+
+  p {
+    margin-top: 5rem;
+    margin-left: 0vw;
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: $smallest) {
+  h2 {
+    margin-top: 10rem;
+    margin-left: 0vw;
+    width: 20rem;
+  }
+
+  p {
+    margin-top: 5rem;
+    margin-left: 0vw;
+    width: 20rem;
+
+  }
+}
