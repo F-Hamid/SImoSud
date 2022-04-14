@@ -1,4 +1,4 @@
-## Dentist Website : F-Hamid
+## SimoSud Website : F-Hamid
 
 A styled and responsive website with services and contact information for fishing and touristic startup.
 
